@@ -27,7 +27,7 @@ const letterDni = [
 export class Dni {
   constructor(num) {
     if (!Number.isInteger(num) || num < 0 || num > 99999999) {
-      throw new Error("The information is incorrect");
+      throw new Error("The information entered is incorrect");
     }
     this.num = num;
   }
